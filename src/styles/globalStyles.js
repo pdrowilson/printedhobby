@@ -10,13 +10,13 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
   body {
-    --primary-color: #d1bd09;
+    --primary-color: #3f74f6;
+    --primaryDarken-color: #151d31;
     --secondary-color: #25b3c9;
     --white-color: #fafafa;
-    --gray-color: #1f1f22;
-    --lightgray-color: #272729;
-    background: #1c1d21;
-    color: #dddddd;
+    --lightgray-color: #ebeef7;
+    background: #f1f2fa;
+    color: #585e6c;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font: 400 16px 'Sora', sans-serif;

@@ -4,19 +4,20 @@ const Categories = () => {
   return (
     <CategoriesContainer>
       <List>
-        <li>SciFi</li>
-        <li>Fantasy</li>
-        <li>Modern</li>
+        <h2>Categories List</h2>
       </List>
     </CategoriesContainer>
   )
 }
+export default Categories
+
 const CategoriesContainer = styled.div`
+  background-color: var(--lightgray-color);
   display: flex;
+  flex: 0.25;
+  max-width: 300px;
 `
 
 const List = styled.div`
   flex-direction: column;
 `
-
-export default Categories

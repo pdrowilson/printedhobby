@@ -1,11 +1,17 @@
+import styled from 'styled-components'
 import Categories from '../../components/Categories'
 
 const index = () => {
   return (
-    <section>
+    <ContentWrapper>
       <Categories />
-    </section>
+    </ContentWrapper>
   )
 }
 
 export default index
+
+const ContentWrapper = styled.div`
+  display: flex;
+  flex: 1;
+`

@@ -1,19 +1,19 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Header from './components/Header'
+import Sidebar from './components/Sidebar'
 import Home from './pages/Home'
-import Categories from './components/Categories'
+import Projects from './pages/Projects'
 import styled from 'styled-components'
 
 function Routes() {
   return (
     <>
       <Router>
-        <Header />
+        <Sidebar />
         <Switch>
           <MainWrapper>
             <Route path="/" component={Home} exact />
-            <Route path="/projects" component={Categories} exact />
+            <Route path="/projects" component={Projects} exact />
           </MainWrapper>
         </Switch>
       </Router>
@@ -22,7 +22,9 @@ function Routes() {
 }
 
 const MainWrapper = styled.div`
-  margin-top: 5rem;
+  display: flex;
+  /* background-color: lightslategrey; */
+  flex: 0.85;
 `
 
 export default Routes
