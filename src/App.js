@@ -1,9 +1,18 @@
+import styled from 'styled-components'
+import Routes from './routes'
+import GlobalStyles from './styles/globalStyles'
+
 function App() {
   return (
-    <div className="App">
-      <h1>Printed Hobbyasd</h1>
-    </div>
+    <AppBody>
+      <GlobalStyles />
+      <Routes />
+    </AppBody>
   )
 }
+const AppBody = styled.div`
+  display: flex;
+  height: 100vh;
+`
 
 export default App
