@@ -1,8 +1,12 @@
+import Routes from './routes'
+import GlobalStyles from './styles/globalStyles'
+
 function App() {
   return (
-    <div className="App">
-      <h1>Printed Hobbyasd</h1>
-    </div>
+    <>
+      <GlobalStyles />
+      <Routes />
+    </>
   )
 }
 
